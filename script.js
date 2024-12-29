@@ -21,3 +21,11 @@ document.getElementById("changeOrder").addEventListener('click', function() {
     coffeeType.style.backgroundColor = 'brown';
     coffeeType.style.padding = '5px'
 })
+
+// challenge 4
+
+document.getElementById('addNewItem').addEventListener('click', function () {
+    let newItem = document.createElement('li');
+    newItem.textContent = 'eggs';
+    document.getElementById('shoppingList').appendChild(newItem)
+})
