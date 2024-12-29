@@ -5,3 +5,10 @@ document.getElementById("changeTextButton").addEventListener('click', function (
     paragraph.textContent = "the paragraph is changed";
     
 })
+
+// challenge 2
+
+document.getElementById("highlightFirstCity").addEventListener('click', function () {
+            let citiesList = document.getElementById("citiesList");
+            citiesList.firstElementChild.classList.add('highlight');
+});
