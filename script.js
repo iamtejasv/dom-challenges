@@ -29,3 +29,10 @@ document.getElementById('addNewItem').addEventListener('click', function () {
     newItem.textContent = 'eggs';
     document.getElementById('shoppingList').appendChild(newItem)
 })
+
+// challenge 5
+
+document.getElementById("removeLastTask").addEventListener('click', function () {
+    let taskList = document.getElementById('tasklist');
+    taskList.lastElementChild.remove();
+});
