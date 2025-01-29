@@ -64,3 +64,9 @@ document.getElementById("feedbackForm").addEventListener('submit', function(even
   document.getElementById("feedbackDisplay").textContent =
     `feedback is: ${feedback}`;
 })
+
+// challenge 9
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("domStatus").textContent = "DOM fully loaded";
+})
