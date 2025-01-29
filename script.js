@@ -54,3 +54,13 @@ document.getElementById("teaList").addEventListener("click", function(event) {
   }
   
 })
+
+// challenge 8
+
+document.getElementById("feedbackForm").addEventListener('submit', function(event) {
+  event.preventDefault();
+  let feedback = document.getElementById("feedbackInput").value;
+  console.log(feedback);
+  document.getElementById("feedbackDisplay").textContent =
+    `feedback is: ${feedback}`;
+})
